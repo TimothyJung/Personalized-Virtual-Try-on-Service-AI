@@ -6,7 +6,8 @@
   Openpose Model, CIHP PGN Model, Detectron2 Model, Carvekit Background Removal Tool, Agnostic, Try-On Condition Generator, Try-On Image Generator의 전처리 모델링이 사용되었다.
   
 - 기여한 모델링:
-  Openpose Model, CIHP PGN Model을 구현하였으며, 사이즈 추천 서비스를 위한 데이터 전처리 및 코드 작성
+  Openpose Model(사용자 이미지의 관절 키 포인트 검출 후 관절 위치를 이어 스켈레톤 이미지 생성)
+ ,CIHP PGN Model(신체와 의류 구분을 위해 분할된 이미지 생성)을 구현하였으며, 사이즈 추천 서비스를 위한 데이터 전처리 및 코드 작성
 
 1. 선정배경
 
