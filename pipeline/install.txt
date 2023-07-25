@@ -1,0 +1,31 @@
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
+pip install av
+pip install opencv-python~=4.5.5.64
+pip install scipy
+pip install -r pipeline/requirements.txt
+
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+conda install cudatoolkit=11.3 -c conda-forge
+
+
+
+
+pipeline(1)
+conda create -n pipeline_1 python=3.7 -y
+conda activate pipeline_1
+conda install -c anaconda cudatoolkit=10.0 cudnn -y
+pip install -r pipeline/requirements_1.txt
+conda deactivate
+
+pipeline(2)
+conda create -n pipeline_2 python=3.9 -y
+conda activate pipeline_2
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+pip install -r pipeline/requirements_2.txt
+conda deactivate
+
+
+uvicorn pipeline.FastAPI:app --reload --host 0.0.0.0 --port 8000

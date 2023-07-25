@@ -1,0 +1,6 @@
+av
+numpy~=1.23.0
+opencv-python
+scipy
+tensorboardX
+torchgeometry
