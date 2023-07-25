@@ -1,9 +1,11 @@
 # Personalized-Virtual-Try-on-Service-AI
 
 - 빅프로젝트 진행 중 구현한 AI 모델링
-- 적용 모델링
+  
+- 적용 모델링:
   Openpose Model, CIHP PGN Model, Detectron2 Model, Carvekit Background Removal Tool, Agnostic, Try-On Condition Generator, Try-On Image Generator의 전처리 모델링이 사용되었다.
-- 기여한 모델링
+  
+- 기여한 모델링:
   Openpose Model, CIHP PGN Model을 구현하였으며, 사이즈 추천 서비스를 위한 데이터 전처리 및 코드 작성
 
 1. 선정배경
